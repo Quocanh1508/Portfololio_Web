@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="nav-inner">
+        <div class="brand"><img src="../assets/logo.png" alt="Logo"/> My Portfolio</div>
+        <ul class="nav-links">
+          <li><a href="#hero">Trang chủ</a></li>
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#skills">Kỹ năng</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+          <li><a href="#submissions" class="pill">Nộp bài</a></li>
+        </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="section nav-panels reveal">
+      <div class="panel-grid">
+        <a class="panel" href="#about">
+          <div class="icon">👋</div>
+          <div class="text">
+            <h4>Giới thiệu</h4>
+            <p>Tóm tắt nhanh về tôi</p>
+          </div>
+        </a>
+        <a class="panel" href="#skills">
+          <div class="icon">🛠️</div>
+          <div class="text">
+            <h4>Kỹ năng</h4>
+            <p>Công nghệ tôi dùng</p>
+          </div>
+        </a>
+        <a class="panel" href="#submissions">
+          <div class="icon">📤</div>
+          <div class="text">
+            <h4>Nộp bài</h4>
+            <p>Gửi link bài của bạn</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <main>
+      <section id="hero" class="section hero reveal">
+        <div class="hero-content card">
+          <h1>Xin chào! Tôi là <span class="accent">Your Name</span></h1>
+          <p>Frontend Developer | Supabase Enthusiast</p>
+          <div class="hero-actions">
+            <a href="#submissions" class="btn">Nộp bài</a>
+            <a href="#contact" class="btn btn-secondary">Liên hệ</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section reveal">
+        <h2>Giới thiệu</h2>
+        <div class="about-cards">
+          <article class="about-item card">
+            <div class="about-icon">🧩</div>
+            <div class="about-text">
+              <h3>Frontend tinh gọn</h3>
+              <p>Tập trung HTML/CSS/JS thuần, cấu trúc rõ ràng, tận dụng API trình duyệt để tạo trải nghiệm mượt mà.</p>
+            </div>
+          </article>
+          <article class="about-item card">
+            <div class="about-icon">🗃️</div>
+            <div class="about-text">
+              <h3>Supabase chuẩn RLS</h3>
+              <p>Thiết kế bảng, policy RLS, RPC Security Definer; quản lý multi-tenant an toàn.</p>
+            </div>
+          </article>
+          <article class="about-item card">
+            <div class="about-icon">🎯</div>
+            <div class="about-text">
+              <h3>UX trước, tối ưu sau</h3>
+              <p>Ưu tiên dễ dùng, phản hồi nhanh; sau đó tối ưu hiệu năng và accessibility.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section reveal">
+        <h2>Kỹ năng</h2>
+        <div class="chips">
+          <span class="chip">🔥 HTML5</span>
+          <span class="chip">🎨 CSS3 / Flexbox / Grid</span>
+          <span class="chip">⚡ JavaScript (ES6+)</span>
+          <span class="chip">🗄️ Supabase (Auth/RLS/RPC)</span>
+          <span class="chip">📱 Responsive</span>
+          <span class="chip">♿ Accessibility</span>
+          <span class="chip">🚀 Performance</span>
+        </div>
+      </section>
+
+      <section class="section reveal" id="experience">
+        <h2>Kinh nghiệm</h2>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot">💼</div>
+            <div class="tl-content card">
+              <header>
+                <h3>Frontend Developer · Freeland Studio</h3>
+                <span class="tl-time">06/2023 – 07/2025</span>
+              </header>
+              <ul class="bullets">
+                <li>Xây landing page tốc độ cao, Lighthouse ≥ 95, CLS < 0.1.</li>
+                <li>Tối ưu bundle, lazy-load hình ảnh, preconnect font.</li>
+                <li>Thiết kế hệ thống biến CSS, theme sáng/tối.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot">🧱</div>
+            <div class="tl-content card">
+              <header>
+                <h3>Supabase Builder · Side Projects</h3>
+                <span class="tl-time">2024 – nay</span>
+              </header>
+              <ul class="bullets">
+                <li>Thiết kế RLS/RPC security definer cho app multi-tenant.</li>
+                <li>Realtime channel theo bảng, cập nhật UI tức thì.</li>
+                <li>Auth email/password, magic link, quản lý session phía client.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="projects">
+        <h2>Dự án nổi bật</h2>
+        <div class="grid two">
+          <article class="card">
+            <h3>Portfolio Multi-tenant</h3>
+            <p>Form nộp bài công khai, khóa riêng từng user, xem public, realtime cập nhật.</p>
+          </article>
+          <article class="card">
+            <h3>UI Components Kit</h3>
+            <p>Thư viện components thuần HTML/CSS/JS: modal, toast, tabs, accordion, grid.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="submissions" class="section reveal">
+        <h2>Nộp bài</h2>
+        <form id="submit-form" class="card">
+          <div class="field">
+            <label>Liên kết bài làm</label>
+            <input name="url" type="url" placeholder="https://..." required />
+          </div>
+          <div class="field">
+            <label>Tiêu đề</label>
+            <input name="title" type="text" placeholder="Tiêu đề" required />
+          </div>
+          <div class="field">
+            <label>Mô tả</label>
+            <textarea name="description" placeholder="Mô tả ngắn" required></textarea>
+          </div>
+          <div class="field">
+            <label>Khóa nộp bài</label>
+            <input name="submit_key" type="password" placeholder="Nhập khóa riêng" required />
+          </div>
+          <button type="submit" class="btn">Gửi</button>
+          <div id="submit-message" class="message" aria-live="polite"></div>
+        </form>
+
+        <div class="list-header">
+          <h3>Danh sách bài nộp</h3>
+          <button id="refresh" class="btn btn-secondary">Tải lại</button>
+        </div>
+        <div id="submissions-list" class="grid"></div>
+      </section>
+
+      <section id="contact" class="section reveal">
+        <h2>Liên hệ</h2>
+        <div class="grid two">
+          <div class="card">
+            <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+            <p>GitHub: <a href="https://github.com/yourname" target="_blank" rel="noopener">github.com/yourname</a></p>
+          </div>
+          <div class="card">
+            <p>Đang mở cơ hội hợp tác về Frontend/Supabase. Rất mong được kết nối!</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">© 2025 Your Name</footer>
+    <button id="backToTop" class="back-to-top" aria-label="Lên đầu trang">↑</button>
+
+    <script src="../scripts/env.js"></script>
+    <script src="../scripts/app.js" type="module"></script>
+  </body>
+  </html>
+
+
