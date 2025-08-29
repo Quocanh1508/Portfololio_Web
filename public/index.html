@@ -14,7 +14,7 @@
     <header class="site-header">
       <nav class="navbar">
         <div class="nav-inner">
-        <div class="brand"><img src="../assets/logo.png" alt="Logo"/> My Portfolio</div>
+        <div class="brand"><img src="../assets/Logo_chibi.png" alt="Logo"/> My Portfolio</div>
         <ul class="nav-links">
           <li><a href="#hero">Trang chủ</a></li>
           <li><a href="#about">Giới thiệu</a></li>
@@ -55,8 +55,9 @@
     <main>
       <section id="hero" class="section hero reveal">
         <div class="hero-content card">
-          <h1>Xin chào! Tôi là <span class="accent">Your Name</span></h1>
-          <p>Frontend Developer | Supabase Enthusiast</p>
+          <img src="../assets/Logo_main.jpg" alt="Ảnh đại diện Quốc Anh" class="hero-img">
+          <h1>Xin chào! Em là <span class="accent">Quốc Anh</span></h1>
+          <p>Hiện đang theo học Data Engineering tại Trường Đại học Sư Phạm Kĩ Thuật</p>
           <div class="hero-actions">
             <a href="#submissions" class="btn">Nộp bài</a>
             <a href="#contact" class="btn btn-secondary">Liên hệ</a>
@@ -68,24 +69,39 @@
         <h2>Giới thiệu</h2>
         <div class="about-cards">
           <article class="about-item card">
-            <div class="about-icon">🧩</div>
+            <div class="about-icon">🧑‍🎓</div>
             <div class="about-text">
-              <h3>Frontend tinh gọn</h3>
-              <p>Tập trung HTML/CSS/JS thuần, cấu trúc rõ ràng, tận dụng API trình duyệt để tạo trải nghiệm mượt mà.</p>
+              <h3>Học tập</h3>
+              <p>
+              🎓 Thuộc khoa Công nghệ Thông tin<br>
+              📊 GPA: 3.00/4.00<br>
+              ⏳ 2023 - 2027<br>
+              💻 Hiện tại tập trung nghiệp vụ Data Analyst<br>
+              👨‍💻 Trưởng ban Media - RTIC<br>
+              </p>
+          </article>
+          <article class="about-item card">
+            <div class="about-icon">🏃‍♂️</div>
+            <div class="about-text">
+              <h3>Sở thích</h3>
+              <p>
+            🎵 Nghe nhạc<br>
+            📚 Đọc sách<br>
+            🕹️ Chơi game<br>
+            🏸 Cầu lông<br>
+            
+            </p>
             </div>
           </article>
           <article class="about-item card">
-            <div class="about-icon">🗃️</div>
+            <div class="about-icon">📜</div>
             <div class="about-text">
-              <h3>Supabase chuẩn RLS</h3>
-              <p>Thiết kế bảng, policy RLS, RPC Security Definer; quản lý multi-tenant an toàn.</p>
-            </div>
-          </article>
-          <article class="about-item card">
-            <div class="about-icon">🎯</div>
-            <div class="about-text">
-              <h3>UX trước, tối ưu sau</h3>
-              <p>Ưu tiên dễ dùng, phản hồi nhanh; sau đó tối ưu hiệu năng và accessibility.</p>
+              <h3>Hành trình phát triển</h3>
+              <p>
+                🏅Top 8 cuộc thi Hackathon HCMUTE 2024<br>
+                🎖️Top 12 cuộc thi CTF HCMUTE 2024<br>
+                📱Đạt chứng chỉ về Big Data của SIC<br>
+              </p>
             </div>
           </article>
         </div>
@@ -95,28 +111,33 @@
         <h2>Kỹ năng</h2>
         <div class="chips">
           <span class="chip">🔥 HTML5</span>
-          <span class="chip">🎨 CSS3 / Flexbox / Grid</span>
+          <span class="chip">🎨 CSS3</span>
           <span class="chip">⚡ JavaScript (ES6+)</span>
-          <span class="chip">🗄️ Supabase (Auth/RLS/RPC)</span>
-          <span class="chip">📱 Responsive</span>
-          <span class="chip">♿ Accessibility</span>
-          <span class="chip">🚀 Performance</span>
+          <span class="chip">🗄️ SQL Server</span>
+          <span class="chip">☕ Java</span>
+          <span class="chip">🐍 Python</span>
+          <span class="chip">🖌️ UI/UX design</span>
         </div>
       </section>
 
       <section class="section reveal" id="experience">
-        <h2>Kinh nghiệm</h2>
+        <h2>Dự án</h2>
         <div class="timeline">
           <div class="tl-item">
             <div class="tl-dot">💼</div>
             <div class="tl-content card">
+              <div class="project-preview">
+            <a href="https://hcmutertic.com/" target="_blank" rel="noopener">
+              <img src="../assets/project1.png" alt="Ảnh Webhub RTIC" style="max-width:800px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,.08); margin-top:12px;">
+            </a>
+            </div>  
               <header>
-                <h3>Frontend Developer · Freeland Studio</h3>
-                <span class="tl-time">06/2023 – 07/2025</span>
+                <h3>UI/UX Designer · Webhub RTIC Club</h3>
+                <span class="tl-time">04/2025</span>
               </header>
               <ul class="bullets">
-                <li>Xây landing page tốc độ cao, Lighthouse ≥ 95, CLS < 0.1.</li>
-                <li>Tối ưu bundle, lazy-load hình ảnh, preconnect font.</li>
+                <li>Thiết kế giao diện Webhub</li>
+                <li>Đảm bảo sự dễ dàng tương tác, dễ sử dụng</li>
                 <li>Thiết kế hệ thống biến CSS, theme sáng/tối.</li>
               </ul>
             </div>
@@ -124,30 +145,32 @@
           <div class="tl-item">
             <div class="tl-dot">🧱</div>
             <div class="tl-content card">
+              <a href="https://merry-christmas-snowy.vercel.app/" target="_blank" rel="noopener">
+              <img src="../assets/project2.png" alt="Ảnh Web Giáng Sinh 2024" style="max-width:800px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,.08); margin-top:12px;">
+              </a>
               <header>
-                <h3>Supabase Builder · Side Projects</h3>
-                <span class="tl-time">2024 – nay</span>
+                <h3>Front-End Coder · Christmas Web</h3>
+                <span class="tl-time">24/12/2024</span>
               </header>
               <ul class="bullets">
-                <li>Thiết kế RLS/RPC security definer cho app multi-tenant.</li>
-                <li>Realtime channel theo bảng, cập nhật UI tức thì.</li>
-                <li>Auth email/password, magic link, quản lý session phía client.</li>
+                <li>Đảm nhận phần code FE</li>
+                <li>Thiết kế giao diện web</li>
+                <li>Thiết kế banner, khung avt</li>
               </ul>
-            </div>
           </div>
         </div>
       </section>
 
       <section class="section reveal" id="projects">
-        <h2>Dự án nổi bật</h2>
+        <h2>Hoạt động xã hội</h2>
         <div class="grid two">
           <article class="card">
-            <h3>Portfolio Multi-tenant</h3>
-            <p>Form nộp bài công khai, khóa riêng từng user, xem public, realtime cập nhật.</p>
+            <h3>Cộng tác viên Đoàn Hội</h3>
+            <p>Hoạt động trong ban truyền thông ( 2023-2024 )</p>
           </article>
           <article class="card">
-            <h3>UI Components Kit</h3>
-            <p>Thư viện components thuần HTML/CSS/JS: modal, toast, tabs, accordion, grid.</p>
+            <h3>Trưởng Ban truyền thông CLB RTIC</h3>
+            <p>Hoạt động như trưởng ban truyền thông CLB, đảm nhận thiết kế chạy truyền thông,...</p>
           </article>
         </div>
       </section>
@@ -190,13 +213,13 @@
             <p>GitHub: <a href="https://github.com/Quocanh1508" target="_blank" rel="noopener">github.com/Quocanh1508</a></p>
           </div>
           <div class="card">
-            <p>Đang mở cơ hội hợp tác về Frontend/Supabase. Rất mong được kết nối!</p>
+            <p>Đang tìm kiếm cơ hội thực tập về Cloud và Data. Rất mong được kết nối!</p>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">© 2025 Your Name</footer>
+    <footer class="site-footer">©NguyenDangQuocAnh_23133004</footer>
     <button id="backToTop" class="back-to-top" aria-label="Lên đầu trang">↑</button>
 
     <script src="../scripts/env.js"></script>
