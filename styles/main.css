@@ -5,7 +5,7 @@
 .about-icon 
 { font-size: 22px; }
 .about-text h3 
-{ margin: 0 0 6px; align-items: left; }
+{ margin: 0 0 6px; }
 
 .timeline 
 { position: relative; display: grid; gap: 16px; }
